@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login authentication page</title>
+    <link rel="stylesheet" href="login_authentication.css">
+</head>
+<body>
+    <video src="login.mp4" muted loop autoplay   class="login"></video>
+    <div id="login">
+        <h1 class="heading">
+            LOGIN
+            <hr class="hr">
+        </h1>
+        <p class="username">Username</p>
+        <input type="email" id="email" placeholder="enter your email">
+        <p class="password">Password</p>
+        <input type="password" id="placeholder" placeholder="enter your password">
+        <p class="forgot">forgot password?</p>
+        <button type="button" onclick="queenMendusa()" id="mendusa">LOGIN</button>
+
+    </div> 
+    <script>
+        function queenMendusa(){
+            var email= document.getElementById("email").value;
+            var password= document.getElementById("placeholder").value;
+            if (email== 'saurabhmishra9026@gmail.com' && password=='12345'){
+                alert("successfully login");0
+               window.location.assign("https://www.pexels.com/video/a-woman-running-towards-the-sea-water-3326928/");
+            }
+            else{
+                alert("wrong password");
+            }
+        }
+    </script>
+</body>
+</html>
